@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Skills</title>
+    <style type="text/css">
+        body {
+            background-color: #80bfff;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+        }
+
+        .btn {
+            border: 2px;
+            background-color: #ffe680;
+            font-style: oblique;
+            font-family: serif;
+            font-weight: bold;
+            color: black;
+            padding: 40px 50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 224px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            font-style: oblique;
+            font-family: serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #80bfff;
+        }
+
+        .dropdown a {
+            color: black;
+            padding: 20px 24px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ffe680;
+            color: #80bfff;
+        }
+
+        .btn1:hover .dropdown,
+        .btn2:hover .dropdown,
+        .btn3:hover .dropdown,
+        .btn4:hover .dropdown,
+        .btn5:hover .dropdown,
+        .btn6:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn1">
+        <button class="btn">Personal Skills</button>
+        <div class="dropdown">
+            <a>Creativity</a>
+            <a>Communication</a>
+            <a>Decision Making</a>
+            <a>Team Work</a>
+        </div>
+    </div>
+    <div class="btn2">
+        <button class="btn">Area Of Interest</button>
+        <div class="dropdown">
+            <a>Design Thinking</a>
+            <a>Excel</a>
+            <a>SQL</a>
+            <a>Web Development</a>
+        </div>
+    </div>
+    <div class="btn3">
+        <button class="btn">Technical Skills</button>
+        <div class="dropdown">
+        <a>HTML</a>
+        <a>CSS</a>
+        <a>C</a>
+        <a>JAVA</a>
+        </div>
+    </div>
+    <div class="btn4">
+        <button class="btn">Languages Known</button>
+        <div class="dropdown">
+        <a>TAMIL</a>
+        <a>ENGLISH</a>
+        </div>
+    </div>
+    <div class="btn5">
+        <button class="btn">Tools</button>
+        <div class="dropdown">
+        <a>Sublime</a>
+        <a>Eclipse</a>
+        <a>Visual Studio</a>
+        <a>MS Excel</a>
+        </div>
+    </div>
+    <div class="btn6">
+        <button class="btn">Hobbies</button>
+        <div class="dropdown">
+        <a>Photography</a>
+        <a>Gardening</a>
+        </div>
+    </div>
+</body>
+</html>

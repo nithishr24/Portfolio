@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#EducationalDetails {background-color: red;}
+#Projects {background-color: green;}
+#Internships {background-color: blue;}
+#Certifications {background-color: orange;}
+#CocurricularActivities{background-color: yellow}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('EducationalDetails', this, 'red')">Educational Details</button>
+<button class="tablink" onclick="openPage('Projects', this, 'green')" id="defaultOpen">Projects</button>
+<button class="tablink" onclick="openPage('Internships', this, 'blue')">Internships</button>
+<button class="tablink" onclick="openPage('Certifications', this, 'orange')">Certifications</button>
+<button class="tablink" onclick="openPage('CocurricularActivities', this, 'orange')">Cocurricular Activities</button>
+<div id="EducationalDetails" class="tabcontent">
+  <p>2020-present</p>
+  <p>M.kumarasamy college of engineering</p>
+  <p>B.Tech Computer Science and Business Systems</p>
+  <p>Cumulative GPA: 8.10/10 (until the fifth semester)</p>
+  <p>Graduation Expected MAY 2024</p><br>
+  <p>2019-2020</p>
+  <p>AKKV Aarnadu Matric. Higher Secondary School</p>
+  <p>HSC - 12th standard</p>
+  <p>Prevailed an aggregate of 67.6%</p><br>
+  <p>2017-2018</p>
+  <p>Chinmaya Vidhyalaya Matric School</p>
+  <p>SSLC - 10th standard</p>
+  <p>Prevailed an aggregate of 74%</p>
+</div>
+
+<div id="Projects" class="tabcontent">
+  <p>DEC 2022-Smart Window Automation</p>
+  <p>Team:3</p>
+  <p>Duration: 6 Months</p>
+  <p>Description:Smart Window Automation is a technology</p>
+  <p>that enables users to remotely control their windows</p>
+  <p>through a messenger application.</p><br>
+  <p>Jun 2022-Eassy Banking</p>
+  <p>Team:3</p>
+  <p>Duration:1 Month</p>
+  <p>Role:Front End Development(Html,CSS)</p>
+  <p>Description:Eassy Banking is a software application that helps banks</p> 
+  <p>manage their daily operations. It can be used to manage customer accounts,</p>
+  <p>process transactions, and generate reports.</p> 
+  </div>
+
+<div id="Internships" class="tabcontent">
+  <p>Cyber Security virtual Intership</p>
+  <p>AWS cloud virtual Internship</p>
+  <p>Process Mining virtual Internship</p>
+</div>
+
+<div id="Certifications" class="tabcontent">
+  <p>IBM|Object oriented programming Java</p>
+  <P>B1 Business Preliminary exam</P>
+  <P>Forage| Excel Skills Virtual Experience Program</P>
+  <P>COURSERA | Architecting with Google Compute Engine</p>
+</div>
+<div id="CocurricularActivities" class="tabcontent">
+  <p>Presented a paper in "ELECTROPHOENIX"on "CRIME 
+      RATE PREDICTION" organised by Adithya Institute
+      of Technology, COIMBATORE.</p>
+   <p>Participated in REVOLUTION OF AI&ML IN CORE
+      Engineering at KCG college of technology in 
+      Online mode</p>
+   <p>Completed NASSCOM courses and got certificates</p>
+   <p>Attended workshop in AI EXPLORA conducted by 
+       Deep learning AI company</p>
+   <p>Attended a awareness program on National 
+      Intellectual Property conducted by Intellectual 
+      Property  Office,India.</p>
+</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
